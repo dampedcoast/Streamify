@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Streamify</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Streamify</div>
+
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search videos...">
+      <button id="searchButton">Search</button>
+    </div>
+
+    <div class="profile"></div>
+  </div>
+
+  <div class="sidebar">
+    <ul>
+      <li data-category="All">🏠 Home</li>
+      <li id="sidebarTrending">🔥 Trending</li>
+      <li data-category="Gaming">🎮 Gaming</li>
+      <li data-category="Music">🎵 Music</li>
+      <li data-category="Education">📚 Education</li>
+      <li id="sidebarLiked">❤️ Liked Videos</li>
+      <li id="sidebarPlaylists">📂 Playlists</li>
+      <li id="sidebarSettings">⚙ Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Watch. Upload. Share.</h1>
+        <p>
+          A modern YouTube-style video sharing platform built
+          for your Database Systems project.
+        </p>
+      </div>
+    </div>
+
+    <div class="tags">
+      <div class="tag" data-category="All">All</div>
+      <div class="tag" data-category="Gaming">Gaming</div>
+      <div class="tag" data-category="Music">Music</div>
+      <div class="tag" data-category="Education">Education</div>
+    </div>
+
+    <div class="section-title">Trending Videos</div>
+
+    <div id="videoGrid" class="video-grid">
+      <!-- Videos will come from Oracle Database -->
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
